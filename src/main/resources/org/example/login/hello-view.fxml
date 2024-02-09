@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_RIGHT" prefHeight="344.0" prefWidth="453.0" spacing="20.0" style="-fx-background-color: #EBD9B4;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="org.example.login.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+      
+          <Label fx:id="welcomeText" layoutX="43.0" layoutY="51.0" text="Username">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="welcomeText1" layoutX="43.0" layoutY="101.0" text="Password">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="18.0" />
+            </font>
+         </Label>
+         <TextField layoutX="153.0" layoutY="49.0" style="-fx-background-radius: 10;" />
+         <PasswordField layoutX="153.0" layoutY="99.0" style="-fx-background-radius: 10;" />
+          <Button layoutX="46.0" layoutY="151.0" onAction="#onHelloButtonClick" prefHeight="25.0" prefWidth="263.0" style="-fx-background-radius: 10;" text="Submit" />
+      </children>
+   </AnchorPane>
+</VBox>
